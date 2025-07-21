@@ -14,7 +14,7 @@ services:
 
   syncserver:
     container_name: firefox_syncserver
-    build: ./app/
+    image: ghcr.io/go2tom42/syncstorage-rs-docker:latest
     restart: unless-stopped
     ports:
       - "8000:8000"
